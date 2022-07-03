@@ -1,96 +1,102 @@
-* {
-    padding: 0px;
-    margin: 20px;
-    margin-bottom: 5px;
+body, html{
+    margin:0;
+    padding:0;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    padding: 2px;
-    margin: 0;
-    background: #378b8b;
+    background: linear-gradient(to right, #1565C0, #b92b27);
 }
 
 .contenedor {
-    width: 90%;
-    max-width: 500px;
+    width: 100%;
     padding: 10px 20px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    /* para posicionar los elementos en columna */
-    display: flex;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
 }
 
 /* Estilo general de la tarjeta */
 
-.tarjeta {
-    width: 100%;
-    height: 260px;
-    max-width: 1000px;
-    cursor: pointer;
-    background-image: url(img/pais.jpeg);
-    box-shadow: 20px 20px 10px grey;
-    background-size: cover;
+.tarjeta__contenedor {
+    background-image: url(img/fondo-tarjeta.jpeg);
     border-radius: 30px;
+    background-size: cover;
+    width: 25%;
+    height: 150px;
+    padding: 30px;
 }
 
-.frontal .chip {
-    width: 100%;
-    max-width: 50px;
+.tarjeta__chip {
+    width: 40px;
+    height: 35px;
 }
 
-.datos {
-    position: absolute;
-    font-size: 20px;
-    width: 50%;
-    height: 100px;
-    max-width: 1000px;
-    cursor: pointer;
-    border-radius: 15px;
-    color: white;
+.tarjeta__info {
+    display: flex;
 }
 
-
-.form-tarjeta {
-    background-color: #24303c;
+.tarjeta__datos {
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: 180px;
-    right: 65px;
-    border-radius: 10px;
-    width: 600px;
+    border-radius: 15px;
     color: white;
-
+    font-weight: 500;
+    font-size: 18px;
 }
 
+.tarjeta__marca {
+    width: 80px;
+    height: 80px;
+    margin-top: 70px;
+    margin-left: 100px;
+}
 
-.form-tarjeta input,
-.form-tarjeta select {
-    border: 2px solid rgb(43, 89, 226);
-    font-size: 20px;
+.formulario {
+    background-color: #FF5733;
+    border-radius: 30px;
+    width: 35%;
+    height: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.formulario__nombre,
+.formulario__numero {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.formulario__nombre input,
+.formulario__numero input {
+    border-radius: 5px;
     height: 30px;
     width: 80%;
-    padding: 5px 12px;
-    border-radius: 5px;
-    margin-left: 40px;
     margin-top: 5px;
-    box-shadow: 1px 7px 10px -5px;
-    background: #24303c;
-    ;
 }
 
-.btnEnviar {
-    border: none;
-    padding: 5px;
-    font-size: 20px;
-    height: 35px;
-    width: 80%;
-    border-radius: 10px;
-    margin-left: 60px;
-    cursor: pointer;
-    background-color: #2364d2;
-    color: white;
+.formulario__numero {
+    margin-top: 5px;
+}
 
+.formulario__button {
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 60%;
+    background-color: #2364d2;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 90px;
+    color: white;
 }
