@@ -11,12 +11,12 @@
     <main>
         <div class="contenedor">
             <h1 class="titulo">Verifica tu tarjeta</h1>
-            <div class="tarjeta__contenedor">
+            <div class="tarjeta__contenedor" id="tarjeta">
                 <img class="tarjeta__chip" src="img/chip.png" alt="">
-                <div class="tarjeta__info">
+                <div class="tarjeta__info" id="tarjetaInfo">
                     <div class="tarjeta__datos">
                         <p>Número Tarjeta</p>
-                        <p>#### #### #### ####</p>
+                        <p class="numero" id="numeroTarjeta">############</p>
                     </div>
                     <img class="tarjeta__marca" src="img/marca.png" alt="">
                 </div>
@@ -25,14 +25,14 @@
             <form action="" class="formulario" id="form-tarjeta">
                 <div class="formulario__nombre">
                     <label for="inputNombre">Nombre</label>
-                    <input type="texto" id="inputNombre" maxlength="16" autocomplete="off">
+                    <input type="texto" id="inputNombre" autocomplete="off">
                 </div>
                 <div class="formulario__numero">
                     <label for="inputNumero">Número de Tarjeta</label>
-                    <input type="texto" id="inputNumero" maxlength="16" autocomplete="off">
+                    <input type="texto" id="inputNumero" maxlength="19" autocomplete="off">
                 </div>
-                <button type="submit" class="formulario__button">Enviar</button>
             </form>
+            <button id="btnEnviar" class="formulario__button">Enviar</button>
 
         </div>
     </main>

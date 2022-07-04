@@ -54,11 +54,11 @@ body {
     width: 80px;
     height: 80px;
     margin-top: 70px;
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 .formulario {
-    background-color: #FF5733;
+    background-color: #4a4342;
     border-radius: 30px;
     width: 35%;
     height: 200px;
@@ -68,6 +68,7 @@ body {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    opacity:80%;
 }
 
 .formulario__nombre,
@@ -75,6 +76,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 80%;
+    color:white;
 }
 
 .formulario__nombre input,
@@ -93,10 +95,11 @@ body {
     border: none;
     border-radius: 10px;
     height: 35px;
-    width: 60%;
+    width: 20%;
     background-color: #2364d2;
     cursor: pointer;
     margin-top: 15px;
-    margin-right: 90px;
+    margin-right: 30px;
     color: white;
+    font-weight:bolder;
 }
