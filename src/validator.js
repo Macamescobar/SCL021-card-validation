@@ -1,8 +1,19 @@
+//
+
+//let creditCardNumber= [4,1,3,7,8,9,4,7,1,1,7,5,5,9,0,4];
+//console.log('Array Original',creditCardNumber)
+//creditCardNumber.reverse();
+//console.log('Array Reverso',creditCardNumber)
+
 const validator = {
-  //TODO: develop the function to validate.
-  // git add . => agrega los archivos modificados
-  // git commit -m "" => agrega el mensaje de lo que hiciste 
-  // git push => sube los cambios
+    isValid: (creditCardNumber) => {
+        console.log(`El numero es ${creditCardNumber}`); 
+    }
 };
+
+
+
+
+
 
 export default validator;
