@@ -24,19 +24,14 @@
           </div>
         </div>
 
-        <form action="" class="formulario" id="form-tarjeta">
+        <form action="" class="formulario" id="form-tarjeta" required>
           <div class="formulario__nombre">
             <label for="inputNombre">Nombre</label>
-            <input type="texto" id="inputNombre" autocomplete="off" />
+            <input type="texto" id="inputNombre" autocomplete="off" required/>
           </div>
           <div class="formulario__numero">
             <label for="inputNumero">Número de Tarjeta</label>
-            <input
-              type="texto"
-              id="inputNumero"
-              maxlength="16"
-              autocomplete="off"
-            />
+            <input type="text" id="inputNumero" maxlength="16" autocomplete="off" required/>
           </div>
         </form>
         <button id="btnEnviar" class="formulario__button">Enviar</button>
