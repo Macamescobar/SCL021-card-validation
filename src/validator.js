@@ -44,11 +44,8 @@ const validator = {
   maskify: (creditCardNumber) => {
    return creditCardNumber.split('').map((letter, idx) => idx < creditCardNumber.length - 4 ? '#' : letter).join('');
   }
-
 };
 
-//4766444574358863
-//4137894711755904
+//4083952015263
 //5529931622059431
-//5261485053614216	
 export default validator;
