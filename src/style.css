@@ -124,3 +124,12 @@ font-family: 'Courier New', Courier, monospace;
     color: white;
     font-weight:bolder;
 }
+
+.footer {
+    padding: 30px;
+    font-size: small;
+    text-align: center;
+    color:white;
+    margin-top: 45px
+    
+}
