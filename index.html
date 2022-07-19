@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="contenedor">
+        <h1 class="titulo">Verifica tu tarjeta</h1>
+        <div class="tarjeta__contenedor" id="tarjeta">
+          <img class="tarjeta__chip" src="img/chip.png" alt="" />
+          <div class="tarjeta__info" id="tarjetaInfo">
+            <div class="tarjeta__datos">
+              <p class="nombreNumero">Número Tarjeta</p>
+              <p class="numero" id="numeroTarjeta"></p>
+              <p class="name" id="name"></p>
+            </div>
+            <div class="tarjeta__marca">
+              <img src="img/marca.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <form action="" class="formulario" id="form-tarjeta" required>
+          <div class="formulario__nombre">
+            <label for="inputNombre">Nombre</label>
+            <input type="texto" id="inputNombre" autocomplete="off" required/>
+          </div>
+          <div class="formulario__numero">
+            <label for="inputNumero">Número de Tarjeta</label>
+            <input type="text" id="inputNumero" maxlength="16" autocomplete="off" required/>
+          </div>
+        </form>
+        <button id="btnEnviar" class="formulario__button">Enviar</button>
+      </div>
+    </main>
+
+    <footer class="footer"> Creado por Macarena Muñoz para Laboratoria </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
